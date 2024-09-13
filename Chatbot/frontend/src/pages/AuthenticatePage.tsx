@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 import Login from "../components/AuthenticatePage/Login";
-import Register from "../components/AuthenticatePage/Register";
+import Register from "../components/AuthenticatePage/Signup";
 import airobot from "../assets/airobot.png";
 
 const AuthenticatePage = () => {

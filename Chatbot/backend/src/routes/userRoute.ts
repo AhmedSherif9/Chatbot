@@ -7,12 +7,12 @@ import { IUser } from "../models/User";
 
 const router = express.Router();
 
-router.post("/register", async (request, response) => {
+router.post("/signup", async (request, response) => {
   try {
     const { name, email, password } = request.body;
     const UserFound: IUser | null = await UserModel.findOne({ email });
     if (UserFound) {
-      response.status(500).send("User already registered");
+      response.status(500).send("User already signed up");
       return;
     }
     const hashedPassword = await bcrypt.hash(password, 10);
