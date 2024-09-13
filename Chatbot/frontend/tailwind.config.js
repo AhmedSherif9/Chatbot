@@ -9,6 +9,7 @@ export default {
       },
       boxShadow: {
         "all-sides": "0px 0px 105px #64f3d5",
+        "all-sides-form": "-15px -15px 105px #374151",
       },
     },
   },
