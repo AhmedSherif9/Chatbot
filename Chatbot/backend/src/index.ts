@@ -4,7 +4,8 @@ import express from "express";
 import mongoose from "mongoose";
 import cors from "cors";
 import userRouter from "./routes/userRoute";
-import chatRouter from "./routes/chatRoute";
+// import chatRouter from "./routes/chatRoute";
+import chatRouter from "./chat";
 import cookieParser from "cookie-parser";
 
 dotenv.config();
